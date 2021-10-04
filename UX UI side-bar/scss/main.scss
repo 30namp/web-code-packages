@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+@media all and (min-width: 400px){
+    .sidebar {
+        position: fixed;
+        height: 90%;
+        width: 4rem;
+        background: rgb(20, 20, 22);
+        border-radius: 0.5rem;
+        margin-left: 1rem;
+        top: 50%;
+        transform: translate(0%, -50%);
+        box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        color: white;
+    
+        .logo {
+            min-height: 4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .buttons {
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            i {
+                padding: 0.6rem;
+                margin-bottom: 0.75rem;
+                border-radius: 0.4rem;
+                transition: 0.3s;
+            }
+    
+            i:hover {
+                background: white;
+                color: black;
+            }
+        }
+    }
+}
+
+
+@media all and (max-width: 399px){
+    .sidebar {
+        position: fixed;
+        height: 3.5rem;
+        width: 95%;
+        background: rgb(20, 20, 22);
+        border-radius: 0.5rem;
+        left: 50%;
+        bottom: 1%;
+        transform: translate(-50%, 1%);
+        box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        color: white;
+    
+        .logo {
+            display: none;
+        }
+    
+        .buttons {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+    
+            i {
+                padding: 0.7rem;
+                margin-right: 0.75rem;
+                border-radius: 0.4rem;
+                transition: 0.3s;
+            }
+    
+            i:hover {
+                background: white;
+                color: black;
+            }
+        }
+    }
+}
